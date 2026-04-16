@@ -3,145 +3,19 @@
   color: #fff;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1.4fr;
-  gap: 4rem;
-  align-items: start;
-}
-
-.infoCol {}
-
-.intro {
-  color: rgba(255, 255, 255, 0.82);
-  margin-bottom: 2rem;
-  line-height: 1.8;
-  margin-top: 0.75rem;
-}
-
-.contactList {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.contactList li {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.75rem;
-  color: rgba(255, 255, 255, 0.88);
-  font-size: 0.95rem;
-}
-
-.contactIcon {
-  font-size: 1.1rem;
-  flex-shrink: 0;
-  margin-top: 1px;
-}
-
-/* Form */
-.formCol {
-  background: var(--color-bg);
-  border-radius: var(--radius);
-  padding: 2.25rem 2rem;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.1rem;
-}
-
-.formRow {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-.field {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-}
-
-.field label {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--color-text);
-}
-
-.field label span {
-  color: #e53e3e;
-}
-
-.field input,
-.field textarea {
-  padding: 0.65rem 0.875rem;
-  border: 1.5px solid var(--color-border);
-  border-radius: 6px;
-  font-size: 0.95rem;
-  font-family: inherit;
-  color: var(--color-text);
-  background: var(--color-bg);
-  transition: border-color var(--transition), box-shadow var(--transition);
-  resize: vertical;
-}
-
-.field input:focus,
-.field textarea:focus {
-  outline: none;
-  border-color: var(--color-accent);
-  box-shadow: 0 0 0 3px rgba(30, 144, 255, 0.15);
-}
-
-.inputError {
-  border-color: #e53e3e !important;
-}
-
-.error {
-  font-size: 0.8rem;
-  color: #e53e3e;
-}
-
-/* Success */
-.successBox {
+.messageBox {
   text-align: center;
-  padding: 2rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.75rem;
+  padding: 2rem 0;
 }
 
-.successIcon {
-  font-size: 3rem;
+.message {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.88);
+  margin-top: 1rem;
 }
 
-.successBox h3 {
-  font-size: 1.4rem;
-  color: var(--color-primary);
-}
-
-.successBox p {
-  color: var(--color-text-muted);
-  margin-bottom: 0.5rem;
-}
-
-@media (max-width: 900px) {
-  .grid {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
-}
-
-@media (max-width: 500px) {
-  .formRow {
-    grid-template-columns: 1fr;
-  }
-
-  .formCol {
-    padding: 1.5rem 1.25rem;
-  }
+.emailLink {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
 }
