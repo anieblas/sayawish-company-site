@@ -1,22 +1,13 @@
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Services from './components/Services';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import styles from './App.module.css';
 
 function App() {
   return (
-    <>
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Services />
-        <Contact />
-      </main>
-      <Footer />
-    </>
+    <div className={styles.page}>
+      <p className={styles.message}>
+        For any inquiries, please contact us at{' '}
+        <a href="mailto:contact@saywish.com">contact@saywish.com</a>
+      </p>
+    </div>
   );
 }
 

@@ -1,0 +1,20 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+.message {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #1a1a2e;
+}
+
+.message a {
+  color: #0f4c81;
+  font-weight: 600;
+  text-decoration: underline;
+}
